@@ -1,6 +1,6 @@
 #!/bin/bash
-count=5
-for i in {1..54}
+count=5 
+for i in {1..54} # hp05..hp57
 do
     if (( $count < 10 )); then
         echo '-- criando database oficina_hp0'$count
@@ -25,4 +25,3 @@ do
            editora varchar(50) not null,
            ano int not null\n);\n\n'
 done;
-
