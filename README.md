@@ -27,31 +27,31 @@
 
 Confira o material de apoio para as aulas!
 
-- [ ] **Aula 1** - 02/04 
+- [X] **Aula 1** - 02/04 
 	+ Introdução: O que é Java Web?
-	+ Maven
-	+ MVC
-	+ <em>Design pattern</em> DAO (<em>data access object</em>)
+	+ Maven;
+	+ MVC.
 - [ ] **Aula 2** - 03/04
-	+ Continuação DAOs
-	+ JSPs
-	+ Spring MVC Framework
-	+ Estrutura Web
+	+ <em>Design pattern</em> DAO (<em>data access object</em>);
+	+ Continuação DAOs;
+	+ Classes de teste;
+	+ JSPs;
+	+ Estrutura Web.
 - [ ] **Aula 3** - 05/04 
-	+ Sessão e redirecionamento
-	+ GET vs POST
-	+ Spring <em>data binding</em>
-	+ Classes de teste
+	+ Spring MVC Framework;
+	+ Sessão e redirecionamento;
+	+ GET vs POST;
+	+ Spring <em>data binding</em>.
 - [ ] **Aula 4** - 09/04
-	+ Finalização CRUD
-	+ Formas de exibição
+	+ Finalização CRUD;
+	+ Formas de exibição.
 - [ ] **Aula 5** - 10/04
-	+ Ferramentas de apoio
-	+ Taglibs e Tagfiles
+	+ Ferramentas de apoio;
+	+ Taglibs e Tagfiles.
 - [ ] **Aula 6** - 12/04
-	+ Finalização do projeto
+	+ Finalização do projeto;
 	+ Para onde continuar?
-	+ Avaliação da atividade
+	+ Avaliação da atividade.
 -----------------------------------------------------------------
 <p align="center">
 <img src="https://github.com/rwfazul/oficinaJavaWeb/blob/master/imagens/logo.png" width="20%" height="20%" alt="PET-SI" title="PET-SI">
