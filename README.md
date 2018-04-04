@@ -31,13 +31,12 @@ Confira o material de apoio para as aulas!
 	+ Introdução: O que é Java Web?
 	+ Maven;
 	+ MVC.
-- [ ] **Aula 2** - 03/04
+- [X] **Aula 2** - 03/04
 	+ <em>Design pattern</em> DAO (<em>data access object</em>);
-	+ Continuação DAOs;
 	+ Classes de teste;
+- [ ] **Aula 3** - 05/04 
 	+ JSPs;
 	+ Estrutura Web.
-- [ ] **Aula 3** - 05/04 
 	+ Spring MVC Framework;
 	+ Sessão e redirecionamento;
 	+ GET vs POST;
