@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dao;
+package br.csi.dao;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,8 +12,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import model.Usuario;
-import util.ConexaoMySQL;
+import br.csi.model.Usuario;
+import br.csi.util.ConexaoMySQL;
+import org.springframework.stereotype.Repository;
 
 /**
  *
@@ -26,6 +27,7 @@ import util.ConexaoMySQL;
     PRIMARY KEY         (id_usuario)
    );
  */
+@Repository
 public class UsuarioDAO {
     
     public Boolean autenticar(Usuario u) {
