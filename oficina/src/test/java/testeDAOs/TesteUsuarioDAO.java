@@ -5,9 +5,9 @@
  */
 package testeDAOs;
 
-import dao.UsuarioDAO;
+import br.csi.dao.UsuarioDAO;
 import java.util.Collection;
-import model.Usuario;
+import br.csi.model.Usuario;
 
 /**
  *
