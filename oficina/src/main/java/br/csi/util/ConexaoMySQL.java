@@ -18,9 +18,12 @@ import java.util.logging.Logger;
 public class ConexaoMySQL {
     
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String USUARIO = "root";
-    private static final String SENHA = "1234";
-    private static final String URL_CONEXAO = "jdbc:mysql://localhost/oficina?useSSL=false";    
+    private static final String USUARIO = "mysql";
+    private static final String SENHA = "mysql";
+    // USAR NO LINUX
+    private static final String URL_CONEXAO = "jdbc:mysql://localhost/oficina_hpXX?useSSL=false";    
+    // USAR NO WINDOWS:
+    // private static final String URL_CONEXAO = "jdbc:mysql://localhost/oficina_hpXX?useTimezone=true&serverTimezone=UTC&useSSL=false"; 
     
     public static Connection getConexao() {
         Connection c = null;
