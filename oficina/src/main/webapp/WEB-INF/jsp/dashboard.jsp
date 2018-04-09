@@ -20,6 +20,6 @@
             <h1>Hello World!</h1>        
             <h2>Bem vindo(a) ${usuarioLogado.login}</h2>
         </div>
-        
+                
     </body>
 </html>
