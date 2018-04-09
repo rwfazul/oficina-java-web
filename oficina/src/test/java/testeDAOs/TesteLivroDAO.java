@@ -23,20 +23,20 @@ public class TesteLivroDAO {
         ldao.inserir(l1);                         
         ldao.inserir(l2);
         
-        Collection<Livro> livros = ldao.listar();  
         System.out.println("Listando livros....");
-        for (Livro livro : livros) 
-            System.out.println(livro.toString());   
-    
-        ldao.deletar(l1);
-        System.out.println("Listando livros....");
-        for (Livro livro : livros) 
+        for (Livro livro : ldao.listar()) 
             System.out.println(livro.toString());          
         
         l2.setEditora("Bantam Spectra");
         ldao.atualizar(l2);
-        for (Livro livro : livros) 
+        for (Livro livro : ldao.listar()) 
             System.out.println(livro.toString());          
+        
+        ldao.deletar(l1);
+        ldao.deletar(l2);
+        System.out.println("Listando livros....");
+        for (Livro livro : ldao.listar()) 
+            System.out.println(livro.toString());   
     }
       
 }

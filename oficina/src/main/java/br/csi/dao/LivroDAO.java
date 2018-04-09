@@ -25,7 +25,7 @@ import java.util.logging.Logger;
        titulo              VARCHAR(100)    NOT NULL,
        editora             VARCHAR(50)     NOT NULL,
        ano                 INT             NOT NULL,
-       PRIMARY KEY	        (isbn)
+       PRIMARY KEY	   (isbn)
    );
  */
 public class LivroDAO {
@@ -72,7 +72,7 @@ public class LivroDAO {
                 l.setTitulo(rs.getString("titulo"));
                 l.setAutor(rs.getString("autor"));
                 l.setEditora(rs.getString("editora"));
-                l.setAno(rs.getInt(rs.getInt("ano")));
+                l.setAno(rs.getInt("ano"));
                 livros.add(l);
             }
         } catch (SQLException ex) {
