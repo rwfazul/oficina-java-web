@@ -30,7 +30,6 @@
                         <input type="password" id="senha" name="senha" placeholder="Digite a senha" class="form-control" required/>
                     </div>
                     <button type="submit" class="btn btn-default btn-primary btn-submit">Fazer login</button>
-                    <a href="cadastro" class="btn btn-link">Não tenho cadastro</a>
                 </form>               
                 <br/>
                 <c:if test="${not empty msg}">
@@ -41,29 +40,12 @@
                     <c:remove var="msg"/> 
                 </c:if>
 
-                <c:if test="${not empty sucesso}">
-                    <div class="alert alert-success alert-dismissible fade in">  
-                        <button class="close" data-dismiss="alert">&times;</button>
-                        <p>${sucesso}</p>
-                    </div> 
-                    <c:remove var="sucesso"/> 
-                </c:if>
             </div> <!-- ./col --> 
             </div> <!-- ./row -->
         </div> <!-- ./container -->
-
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="recursos/_bootstrap/js/bootstrap.min.js"></script>
-        
-        <c:if test="${not empty falha}">
-            <script>
-                $(function() {
-                    $("#registro").modal();
-                });
-            </script>
-            <c:remove var="falha"/> 
-        </c:if>
 
     </body>
 </html>
