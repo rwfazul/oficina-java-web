@@ -34,15 +34,15 @@ Confira o material de apoio para as aulas!
 - [X] **Aula 2** - 03/04
 	+ <em>Design pattern</em> DAO (<em>data access object</em>);
 	+ Classes de teste;
-- [ ] **Aula 3** - 05/04 
+- [ X **Aula 3** - 05/04 
+	+ Finalização CRUD;
 	+ JSPs;
 	+ Estrutura Web.
 	+ Spring MVC Framework;
 	+ Sessão e redirecionamento;
+- [ ] **Aula 4** - 09/04
 	+ GET vs POST;
 	+ Spring <em>data binding</em>.
-- [ ] **Aula 4** - 09/04
-	+ Finalização CRUD;
 	+ Formas de exibição.
 - [ ] **Aula 5** - 10/04
 	+ Ferramentas de apoio;
