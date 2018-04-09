@@ -3,38 +3,51 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package br.csi.model;
+
+import java.io.Serializable;
 
 /**
  *
- * @author Claiton
+ * @author rhau
  */
-public class Livro {
+public class Livro implements Serializable {
     
-    private int ISBN;
+    private Integer isbn;
     private String titulo;
     private String autor;
     private String editora;
-    private int ano;
+    private Integer ano;
+    
+    public Livro() {
 
-    public Livro(int ISBN, String titulo, String autor, String editora, int ano) {
-        this.ISBN = ISBN;
+    }
+
+    public Livro(Integer isbn) {
+        this.isbn = isbn;
+    }  
+
+    public Livro(String titulo, String autor, String editora, Integer ano) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.editora = editora;
+        this.ano = ano;
+    }
+    
+    public Livro(Integer isbn, String titulo, String autor, String editora, Integer ano) {
+        this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
         this.editora = editora;
         this.ano = ano;
     }
 
-    public Livro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Integer getIsbn() {
+        return isbn;
     }
 
-    public int getISBN() {
-        return ISBN;
-    }
-
-    public void setISBN(int ISBN) {
-        this.ISBN = ISBN;
+    public void setIsbn(Integer isbn) {
+        this.isbn = isbn;
     }
 
     public String getTitulo() {
@@ -61,13 +74,17 @@ public class Livro {
         this.editora = editora;
     }
 
-    public int getAno() {
+    public Integer getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(Integer ano) {
         this.ano = ano;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Livro{" + "isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + ", editora=" + editora + ", ano=" + ano + '}';
+    }    
+
 }

@@ -21,10 +21,10 @@ import org.springframework.stereotype.Repository;
  * @author rhau
  *
  * CREATE TABLE usuario (
-    id_usuario          INT             AUTO_INCREMENT,
-    login               VARCHAR(30)     NOT NULL,
-    senha               VARCHAR(20)     NOT NULL,
-    PRIMARY KEY         (id_usuario)
+       id_usuario          INT             AUTO_INCREMENT,
+       login               VARCHAR(30)     NOT NULL,
+       senha               VARCHAR(20)     NOT NULL,
+       PRIMARY KEY         (id_usuario)
    );
  */
 @Repository
@@ -94,12 +94,13 @@ public class UsuarioDAO {
     
     public Usuario buscar(Integer idUsuario) {
         String sql = "SELECT * FROM usuario WHERE id_usuario =  ?;";
+        Usuario usuario = null;
         try {
             PreparedStatement ps = ConexaoMySQL.getConexao().prepareStatement(sql);
             ps.setInt(1, idUsuario);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                Usuario usuario = new Usuario(idUsuario);
+                usuario = new Usuario(idUsuario);
                 usuario.setLogin(rs.getString("login"));
                 usuario.setSenha(rs.getString("senha"));
                 return usuario;
@@ -107,7 +108,7 @@ public class UsuarioDAO {
         } catch (SQLException ex) {
             Logger.getLogger(UsuarioDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return null;
+        return usuario;
     }
     
     public Boolean atualizar(Usuario u) {
