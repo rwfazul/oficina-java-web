@@ -14,6 +14,7 @@ import br.csi.util.ConexaoMySQL;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.springframework.stereotype.Repository;
 
 /**
  *
@@ -28,6 +29,7 @@ import java.util.logging.Logger;
        PRIMARY KEY	   (isbn)
    );
  */
+@Repository
 public class LivroDAO {
     
     public Boolean inserir(Livro l) {

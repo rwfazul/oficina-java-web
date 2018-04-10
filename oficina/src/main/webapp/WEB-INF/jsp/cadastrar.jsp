@@ -20,7 +20,7 @@
                 <div class="col-md-6 col-md-offset-3">
                 <h1 class="text-center">Sistema de Login</h1>
 
-                <form action="usuarioLogar" method="post">
+                <form action="usuarioInserir" method="post">
                     <div class="form-group">
                         <label for="login">Login</label>
                         <input type="text" id="login" name="login" placeholder="Digite o login" class="form-control" required/>
@@ -31,7 +31,6 @@
                     </div>
                     <button type="submit" class="btn btn-default btn-primary btn-submit pull-left">Fazer login</button>
                 </form>     
-                <a href="cadastrar" class="pull-right">Não possuo login</a>
                 <br/>
                 <c:if test="${not empty msg}">
                     <div class="alert alert-danger alert-dismissible fade in">  

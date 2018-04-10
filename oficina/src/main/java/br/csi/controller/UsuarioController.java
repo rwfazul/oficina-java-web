@@ -52,5 +52,10 @@ public class UsuarioController {
         }
         return "index";
     }
+    
+    @RequestMapping("cadastrar")
+    public String pageCadastro(){
+        return "cadastrar";
+    }
    
 }

@@ -19,6 +19,7 @@
         <div class="jumbotron text-center">
             <h1>Hello World!</h1>        
             <h2>Bem vindo(a) ${usuarioLogado.login}</h2>
+            <h3><a href="livros">Gerenciar livros</a></h3>
         </div>
                 
     </body>
