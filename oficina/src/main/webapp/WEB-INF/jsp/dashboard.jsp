@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Dashboard</title>
         <link rel="stylesheet" href="recursos/_bootstrap/css/bootstrap.min.css">
     </head>
     <body>
@@ -19,7 +19,7 @@
         <div class="jumbotron text-center">
             <h1>Hello World!</h1>        
             <h2>Bem vindo(a) ${usuarioLogado.login}</h2>
-            <h3><a href="livros">Gerenciar livros</a></h3>
+            <h3><a href="meus-livros">Gerenciar livros</a></h3>
         </div>
                 
     </body>

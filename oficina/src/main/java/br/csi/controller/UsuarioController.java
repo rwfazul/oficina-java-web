@@ -27,35 +27,27 @@ public class UsuarioController {
     
     @RequestMapping("usuarioLogar")
     public String autenticar(Model model, Usuario u) {
-        try {
-            if (udao.autenticar(u)) {
-                model.addAttribute("usuarioLogado", u);
-                return "dashboard";
-            } else {
-                model.addAttribute("msg", "Erro: Usuário ou senha inválidos.");
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(UsuarioController.class.getName()).log(Level.SEVERE, null, ex);
+        if (udao.autenticar(u)) {
+            model.addAttribute("usuarioLogado", u);
+            return "dashboard";
+        } else {
+            model.addAttribute("msg", "Erro: Usuário ou senha inválidos.");
         }
         return "index";
     }
-    
-    @RequestMapping("usuarioInserir")
-    public String registar(Model model, Usuario u) {
-        try {
-            if (!udao.inserir(u)) {
-                model.addAttribute("msg", "Não foi possível inserir o usuário.");
-                return "cadastrar";
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(UsuarioController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return "index";
-    }
-    
-    @RequestMapping("cadastrar")
-    public String pageCadastro(){
+        
+    @RequestMapping("cadastroUsuario")
+    public String paginaCadastro(){
         return "cadastrar";
+    }
+    
+    @RequestMapping("inserirUsuario")
+    public String registar(Model model, Usuario u) {
+        if ( !udao.inserir(u) ) {
+            model.addAttribute("msg", "Não foi possível inserir o usuário.");
+            return "cadastrar";
+        }
+        return "index";
     }
    
 }

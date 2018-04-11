@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Oficina</title>
+        <title>Oficina Java para Web</title>
         <link rel="stylesheet" href="recursos/_bootstrap/css/bootstrap.min.css">
     </head>
     <body> 
@@ -31,8 +31,8 @@
                     </div>
                     <button type="submit" class="btn btn-default btn-primary btn-submit pull-left">Fazer login</button>
                 </form>     
-                <a href="cadastrar" class="pull-right">Não possuo login</a>
-                <br/>
+                <a href="cadastroUsuario" class="btn btn-link">Não possuo login</a>
+                <br/><br/>
                 <c:if test="${not empty msg}">
                     <div class="alert alert-danger alert-dismissible fade in">  
                         <button class="close" data-dismiss="alert">&times;</button>

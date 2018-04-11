@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Oficina</title>
+        <title>Cadastro de novos usuários</title>
         <link rel="stylesheet" href="recursos/_bootstrap/css/bootstrap.min.css">
     </head>
     <body> 
@@ -20,7 +20,7 @@
                 <div class="col-md-6 col-md-offset-3">
                 <h1 class="text-center">Sistema de Login</h1>
 
-                <form action="usuarioInserir" method="post">
+                <form action="inserirUsuario" method="post">
                     <div class="form-group">
                         <label for="login">Login</label>
                         <input type="text" id="login" name="login" placeholder="Digite o login" class="form-control" required/>
@@ -29,7 +29,8 @@
                         <label for="senha">Senha</label>
                         <input type="password" id="senha" name="senha" placeholder="Digite a senha" class="form-control" required/>
                     </div>
-                    <button type="submit" class="btn btn-default btn-primary btn-submit pull-left">Fazer login</button>
+                    <button type="submit" class="btn btn-default btn-primary btn-submit">Fazer login</button>
+                    <a href="home" class="btn btn-link">Voltar</a>
                 </form>     
                 <br/>
                 <c:if test="${not empty msg}">

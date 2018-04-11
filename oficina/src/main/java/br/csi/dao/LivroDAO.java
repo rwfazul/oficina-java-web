@@ -95,6 +95,8 @@ public class LivroDAO {
                 livro.setIsbn(rs.getInt("isbn"));
                 livro.setTitulo(rs.getString("titulo"));
                 livro.setAutor(rs.getString("autor"));
+                livro.setEditora(rs.getString("editora"));
+                livro.setAno(rs.getInt("ano"));
             }
             return livro;
         } catch (SQLException ex) {
