@@ -40,14 +40,14 @@ Confira o material de apoio para as aulas!
 	+ Estrutura Web.
 	+ Spring MVC Framework;
 	+ Sessão e redirecionamento;
-- [ ] **Aula 4** - 09/04
+- [X] **Aula 4** - 09/04
 	+ GET vs POST;
 	+ Spring <em>data binding</em>.
 	+ Formas de exibição.
-- [ ] **Aula 5** - 10/04
+- [X] **Aula 5** - 10/04
 	+ Ferramentas de apoio;
 	+ Taglibs e Tagfiles.
-- [ ] **Aula 6** - 12/04
+- [X] **Aula 6** - 12/04
 	+ Finalização do projeto;
 	+ Para onde continuar?
 	+ Avaliação da atividade.

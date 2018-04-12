@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
@@ -51,8 +52,9 @@ public class LivrosController {
     }
     
     @RequestMapping("alterarLivro")
-    public String alterar(@Valid Livro livro){
-
+    public String alterar(@Valid Livro livro, @RequestParam("isbn") Integer isbn){
+        livro.setIsbn(isbn);
+        livroDAO.atualizar(livro);
         return "redirect:meus-livros";
     }
     

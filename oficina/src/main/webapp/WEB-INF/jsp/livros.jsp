@@ -11,7 +11,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Meus livros</title>
-    <link rel="stylesheet" href="recursos/_bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/recursos/_bootstrap/css/bootstrap.min.css">
 </head>
 <body> 
         
@@ -28,7 +28,7 @@
 <c:choose>
     <c:when test="${not empty livroBusca}">
         <legend class="text-center">Alterar livro</legend>
-        <form action="alterarLivro" method="POST">
+        <form action="${pageContext.request.contextPath}/alterarLivro" method="POST">
     </c:when>
     <c:otherwise>
         <legend class="text-center">Cadastrar livro</legend>
@@ -37,7 +37,7 @@
 </c:choose>
             <div class="form-group">
                 <label class="control-label" for="isbn">ISBN</label>
-                <input type="number" class="form-control" name="isbn" value="${livroBusca.isbn}" required/>
+                <input type="number" class="form-control" name="isbn" value="${livroBusca.isbn}" <c:if test="${not empty livroBusca}"> readonly="readonly"</c:if> required />
             </div>
             <div class="form-group">
                 <label class="control-label" for="titulo">Título</label>
@@ -96,7 +96,6 @@
     </div> <!-- ./container -->   
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="recursos/_bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="${pageContext.request.contextPath}/recursos/_bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
